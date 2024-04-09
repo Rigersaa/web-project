@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style/styles.css">
+  <title>PainfulPleasures</title>
+<!-- FOR ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- FOR GLIDEJS -->
+  <!-- Required Core Stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+<!-- Optional Theme Stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+<link rel="stylesheet" href="style/glide.core.min.css"/>
+<link rel="stylesheet" href="style/glide.theme.min.css"/>
+  
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+
+        <!-- This is the header/navbar-->
+      <span>Wholesale - Pros Only</span> 
+      <span>Retail</span>
+    </div>
+    <div class="navbar-center">
+        <form id="search-form" class="max-w-md mx-auto">   
+          <div class="relative">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                  </svg>
+              </div>
+              <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search by name, category..." required />
+              <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+          </div>
+        </form>
+      </div>
+    <div class="navbar-right">
+      <div class="dropdown">
+        <button class="dropdown-toggle">Community</button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle">Account  <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-content">
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle">Cart <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-content">
+          <a href="#">View Cart</a>
+          <a href="#">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Right below main navbar -->
+  <nav class="navbar-below">
+    <div class="navbar-below-left">
+      <a href="#"><img src="images/logo.png" alt="Logo"> PainfulPleasures</a>
+    </div>
+    <div class="navbar-below-center">
+      <div class="dropdown">
+        <button class="dropdown-toggle">BODY JEWELRY  <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle">PIERCING <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle">TATTOO  <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle">MEDICAL  <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle">STUDIO  <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle">PERMANENT MAKEUP <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+
+      
+    </div>
+  </nav>
+
+  <div class="separator"></div>
+
+  <!-- Images with grid layout -->
+  <div class="grid-layout-3images">
+    <div class="left">
+        <img src="images/large.png" />
+    </div>
+    <div class="right-top"><img src="images/small.png" /></div>
+    <div class="right-bottom"><img src="images/small.png" /></div>
+  </div>
+
+  <!-- Images to shop in row -->
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="images/supplies.png" >
+      <h2>Tattoo Supplies</h2>
+      <button class="button-blue">Shop Now</button>
+    </div>
+    <div class="grid-item">
+        <img src="images/supplies.png" >
+        <h2>Body Jewelry</h2>
+        <button class="button-blue">Shop Now</button>
+    </div>
+    <div class="grid-item">
+        <img src="images/supplies.png" >
+        <h2>Piercing Supplies</h2>
+        <button class="button-blue">Shop Now</button>
+    </div>
+    <div class="grid-item">
+        <img src="images/supplies.png" >
+        <h2>Medical Supplies</h2>
+        <button class="button-blue">Shop Now</button>
+    </div>
+    <div class="grid-item">
+        <img src="images/supplies.png" >
+        <h2>Permanent Makeup</h2>
+        <button class="button-blue">Shop Now</button>
+    </div>
+  </div>
+
+  <!-- BLOG -->
+  <div class="blog-container">
+    <!-- BLOG -->
+    <h1 class="header">FROM OUR COMMUNITY</h1>
+    <div class="container">
+        <div class="post">
+            <img src="images/blog.png" >
+            <p>Jun 10, 2020</p>
+            <h2>On Hard Work and Evolution with Tattoo Artist Autumn Hudson</h2>
+        </div>
+        <div class="post">
+            <img src="images/blog.png" >
+            <p>Jun 10, 2020</p>
+            <h2>On Hard Work and Evolution with Tattoo Artist Autumn Hudson</h2>
+        </div>
+        <div class="post">
+            <img src="images/blog.png" >
+            <p>Jun 10, 2020</p>
+            <h2>On Hard Work and Evolution with Tattoo Artist Autumn Hudson</h2>
+        </div>
+    </div>
+
+    <button class="button-blue1">Shop Now</button>
+</div>
+
+
+  <!-- CAROUSEL -->
+  <h1>NEW PRODUCTS</h1>
+  <div class="carousel">
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide"><img src="images/supplies2.png" ></li>
+        <li class="glide__slide">  <img src="images/supplies2.png" ></li>
+        <li class="glide__slide">  <img src="images/supplies2.png" ></li>
+        <li class="glide__slide">  <img src="images/supplies2.png" ></li>
+        <li class="glide__slide">  <img src="images/supplies2.png" ></li>
+        <li class="glide__slide">  <img src="images/supplies2.png" ></li>
+      </ul>
+    </div>
+
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+   const config ={
+    type:"carousel",
+    perView: 4,
+    breakpoints: {
+      800:{
+        perView:2
+      }
+    }
+    };
+  
+    new Glide('.glide', config).mount()
+
+  </script>
+
+
+<!-- REVIEW -->
+
+<h1>REAL REVIEWS FROM REAL CONSTUMERS </h1>
+<div class="review-container-wrapper">
+  <div class="review-container">
+    <div class="review-title">REAL REVIEWS FROM REAL CUSTOMERS</div>
+    <div class="review-details">
+      <span class="date">12/02/19</span>
+      <span class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </span>
+    </div>
+    <div class="review-text">
+      <p>Great healing</p>
+      <p>My first client came back and it was almost healed within 4 days. Great product. I love the way it goes on and protect the tattoo.</p>
+    </div>
+    <div class="review-author">Ashley S.</div>
+    <div class="review-product">Recovery Derm Shield – 7.9” x 8 Yard Roll</div>
+  </div>
+
+
+<div class="review-container">
+  <div class="review">
+    <div class="review-title">REAL REVIEWS FROM REAL CUSTOMERS</div>
+    <div class="review-details">
+      <span class="date">12/02/19</span>
+      <span class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </span>
+    </div>
+    <div class="review-text">
+      <p>Great healing</p>
+      <p>My first client came back and it was almost healed within 4 days. Great product. I love the way it goes on and protect the tattoo.</p>
+    </div>
+    <div class="review-author">Ashley S.</div>
+    <div class="review-product">Recovery Derm Shield – 7.9” x 8 Yard Roll</div>
+  </div>
+</div>
+</div>
+
+
+
+ <footer>
+<div class="footer">
+  <div class="section">
+      <h4>HELPFUL LINKS</h4>
+      <ul>
+          <li>Contact us</li>
+          <li>Support</li>
+          <li>About</li>
+          <li>Accessibility Statement</li>
+      </ul>
+  </div>
+  <div class="section">
+      <h4>SHOPPING</h4>
+      <ul>
+        <li>Reviews</li>
+        <li>Returns</li>
+        <li>Shipping</li>
+        <li>Track Order</li>
+    </ul>
+  </div>
+  <div class="section">
+      <h4>GET IN TOUCH</h4>
+      <ul>
+        <li> <p><i class="fas fa-phone"></i> +4455-66-77</p></li>
+        <li><p><i class="fas fa-envelope"></i> @example</p></li>
+    </ul>
+  </div>
+  <div class="newsletter">
+      <h4>SIGN UP TO OUR NEWSLETTER</h4>
+      <form action="#" method="post">
+          <input type="email" placeholder="Newsletter Sign-Up" name="email">
+          <input type="submit" value="SUBMIT">
+      </form>
+  </div>
+</div>
+</footer>
+</body>
+</html>
